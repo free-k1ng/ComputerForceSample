@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Computer Force! - Store</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<div id="homepage">
+	<button class="openbtn" onclick="openNav()">Menu</button>
+
+	<div id="main" class="main">
+		<p style="font-size: 38px; font-style: italic; left: 30%; font-family:Courier; font-weight: bold;"> Welcome to Computer Force. </p>
+		<img class="logo" src="IMG/block/logo.png" alt="targus">
+	</div>
+
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><strong>x</strong></a>
+		<a style="font-weight: bold;" id="#ABOUT" onclick="return show('us', 'homepage', 'prod', 'check', 'reg');">ABOUT...</a>
+		<a style="font-weight: bold;" id="#PRODUCTS" onclick="return show('prod', 'homepage', 'us', 'check', 'reg');">PRODUCTS</a>
+		<a id="#AUDIO" onclick="return showspecial(0)">Audio</a>
+		<a id="#PCS" onclick="return showspecial(1)">PCs</a>
+		<a id="#GRAPHICS" onclick="return showspecial(2)">Graphics Cards</a>
+		<a id="#KEYS" onclick="return showspecial(3)">Keyboards and Mice</a>
+		<a id="#LAPTOPS" onclick="return showspecial(4)">Laptops</a>
+		<a id="#MONITORS" onclick="return showspecial(5)">Monitors</a>
+		<a id="#NETWORK_" onclick="return showspecial(6)">Networking</a>
+		<a id="#PERIPHERALS" onclick="return showspecial(7)">Peripherals</a>
+		<a id="#PRINTING" onclick="return showspecial(8)">Printing</a>
+		<a id="#SOFTWARE" onclick="return showspecial(9)">Software</a>
+		<a id="#STORAGE" onclick="return showspecial(10)">Storage</a>
+		<a id="#TABLETS" onclick="return showspecial(11)">Tablets</a>
+		<a style="font-weight: bold;" id="#CHECKOUT" onclick="return show('check', 'homepage', 'us', 'prod', 'reg');">CHECKOUT</a>
+		<a style="font-weight: bold;" id="#REGISTER" onclick="return show('reg', 'homepage', 'us', 'check', 'prod');">REGISTER</a>
+	</div>
+
+	<br>
+	<div id="part1" class="part1">
+		<h2 style="font-weight: bold; text-align: center; font-size: 52px"> HOMEPAGE</h2>
+		<p> We are Computer Force. Based in Sydney since 2012, we are now available online 7 days a week. </p>
+		<p> Our prices are highly competitive, and we offer a wide range of PC parts, including some of the latest graphics cards and SSDs.<br>
+		The Online Product listing is updated monthly, so make sure to check the latest parts and software in stock!</p>
+		<p style="background-color:rgba(140, 255, 161, 0.5)" class="part2">Australia-wide shipping now available! Please register to inquire about discounts/refunds!</p>
+		<button class="button-82-pushable" role="button" onclick="return show('us', 'homepage', 'prod', 'check', 'reg');">
+			<span class="button-82-shadow"></span>
+			<span class="button-82-edge"></span>
+			<span class="button-82-front text">
+			ABOUT US!
+			</span>
+		</button>
+	</div>
+
+	<div id="myPanel" class="socials">
+		<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"> </a>
+		<a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"> </a>
+		<a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"> </a>
+		<a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"> </a>
+		<a href="https://www.reddit.com" class="fa fa-reddit" target="_blank"> </a>
+	</div>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">TOP <strong>↑</strong></button>
+	<br>
+	<div id="footer" class="footer">
+		<p style="font-style:italic;"> "For fast, intense computing needs." </p>
+		<p style="font-weight:bold; background-color: rgba(229, 196, 255, 0.3); "> © 2012-2023 COMPUTER FORCE INC.</p>
+	</div>
+</div>
+
+<div id="us" class="us">
+	<h1> About Computer Force... </h1>
+	<p style="background-color: yellow"> Computer Force is a brand-new start-up company designed to provide 
+	first-class service to its customers. Based in Paramatta in Sydney, Computer Force provides top class
+	computing products at bargain prices for sale throughout Australia. </p>
+	<br>
+	<p style="background-color: #C3FF77"> Our goals are:<br>
+	- To become Australia's most well-known and respected hardware and software provider<br>
+	- To create a service-based organisation whose goal is to exceed customer's expectations<br>
+	- To provide a smooth , efficient, and transparent sales process </p>
+	<br>
+	<p style="background-color: #9EFFF8">
+	You can contact us using the following methods:<br>
+	- Address: 100 Main Road, Parramatta, NSW 20150<br>
+	- Email: info@computerforce.com.au <br>
+	- Phone: 02 4444 5555
+	</p>
+	<br><br>
+	<button class="button-14" role="button" onclick="return show('homepage', 'us', 'prod', 'check', 'reg');">HOMEPAGE</button>
+</div>
+
+<div id="prod" class="prod_page">
+	<h1 style='margin-left:10px;'> PRODUCT LIST. </h1> 
+	<button class="fa fa-shopping-cart" onclick="show('check', 'us', 'prod', 'homepage', 'reg');"> </button>
+	
+	<h2> Audio </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/jbl_twe.jpg">
+			<img src="IMG/gallery/Audio-speakers/jbl_twe.jpg" alt="jbl_twe">
+        </a>
+		<div class="desc">
+		JBL Tune 230NC 
+		  True wireless Earbuds - Black
+		<strong>$148</strong>
+		&nbsp;<button onClick='return addtocart(2)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/jbl-boombox-2.jpg">
+			<img src="IMG/gallery/Audio-speakers/jbl-boombox-2.jpg" alt="jbl-boombox-2">
+        </a>
+		<div class="desc">
+		JBL Boombox 2 
+		  Portable Bluetooth Speaker - Black
+		<strong>$398</strong>
+		&nbsp;<button onClick='return addtocart(3)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/jbl-boombox-2.jpg">
+			<img src="IMG/gallery/Audio-speakers/sm-buds-live.jpg" alt="sm-buds-live">
+        </a>
+		<div class="desc">
+		Samsung Galaxy Buds Live 
+		  Wireless Earbuds - Mystic Bronze
+		<strong>$249</strong>
+		&nbsp;<button onClick='return addtocart(4)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/jbl-xtreme-3.jpg">
+			<img src="IMG/gallery/Audio-speakers/jbl-xtreme-3.jpg" alt="jbl-xtreme-3">
+        </a>
+		<div class="desc">
+		JBL Xtreme 3
+		  Portable Bluetooth Speaker - Black
+		<strong>$398</strong>
+		&nbsp;<button onClick='return addtocart(5)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/targus.jpg">
+			<img src="IMG/gallery/Audio-speakers/targus.jpg" alt="targus">
+        </a>
+		<div class="desc">
+		Targus Bluetooth Speaker
+		  Audio Transmitter and Receiver
+		<strong>$59.95</strong>
+		&nbsp;<button onClick='return addtocart(6)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	
+	<h2> Prebuilt PCs </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Computers/g0_gaming_pc.jpg">
+			<img src="IMG/gallery/Computers/g0_gaming_pc.jpg" alt="g0">
+        </a>
+		<div class="desc">
+		G0 Gaming PC
+		 CPU - Intel i5 4590 3.3Ghz 4c/4t
+		 GPU - Gigabyte Gaming RX 570 8GB
+		<strong>$465</strong>
+		&nbsp;<button onClick='return addtocart(7)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Computers/nzxt_starter_pc.webp">
+			<img src="IMG/gallery/Computers/nzxt_starter_pc.webp" alt="nzxt">
+        </a>
+		<div class="desc">
+		NZXT Starter PC
+		 CPU - RYZEN 5 5600G
+		 GPU - In built AMD Graphics (+$0) / RX 6600 8GB (+$400) - out of stock
+		<strong>$899 ~ 1299</strong>
+		&nbsp;<button onClick='return addtocart(8)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Computers/lenovo_thinkcentre.jpg">
+			<img src="IMG/gallery/Computers/lenovo_thinkcentre.jpg" alt="lenovo_pc">
+        </a>
+		<div class="desc">
+		Lenovo ThinkCentre M70s G3 SFF
+		 CPU: Intel i5-12400
+		 Integrated Graphics: Intel UHD Graphics 730
+		<strong>$995</strong>
+		&nbsp;<button onClick='return addtocart(9)'>Add to Cart</button>
+		</div>
+	</div>
+		
+	<h2> Graphics Cards </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Computers/GeForceGT730.jpeg">
+			<img src="IMG/gallery/Graphics-Card/GeForceGT730.jpeg" alt="GeForceGT730">
+        </a>
+		<div class="desc">
+		Gigabyte GeForce GT 730 2GB 3.0 DDR3
+		<strong>$95</strong>
+		&nbsp;<button onClick='return addtocart(10)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Computers/GeForceGT730.jpeg">
+			<img src="IMG/gallery/Graphics-Card/GeForceGT730.jpeg" alt="GeForceGT730">
+        </a>
+		<div class="desc">
+		Gigabyte GeForce GT 730 2GB 3.0 DDR3
+		<strong>$95</strong>
+		&nbsp;<button onClick='return addtocart(10)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Keyboards and Mice </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(11)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Laptops </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Monitors </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Networking </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Peripherals </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Printing </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Software </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Storage </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<h2> Tablets </h2>
+	<div class="gallery">
+		<a target="_blank" href="IMG/gallery/Audio-speakers/bose.jpg">
+			<img src="IMG/gallery/Audio-speakers/bose.jpg" alt="Bose">
+        </a>
+		<div class="desc">
+		Bose Noise Cancelling Headphones 700
+		  - Black
+		<strong>$445</strong>
+		&nbsp;<button onClick='return addtocart(1)'>Add to Cart</button>
+		</div>
+	</div>
+	
+	<button class="hmBtn" onclick="return show('homepage', 'us', 'prod', 'check', 'reg');"> HOME </button>
+</div>
+
+<div id="check" class="cart_page">
+	<h1 style="margin: 20px;text-shadow: 3px 2px 2px cyan;"> CHECKOUT! </h1>
+	<div>
+		<button class="fa fa-cube" onclick="show('prod', 'us', 'homepage', 'check', 'reg');"> </button>
+	</div>
+	
+	<div id="cartlist">
+		<h3> Current items in your Cart: </h3>
+		<p id='shoplist'></p>
+		<h3> Subtotal ($AUD): </h3>
+		<p id='pricetotal'></p>
+	</div>
+	
+	<button class="button-14" onclick="return cartshow()">SHOW/HIDE CART</button>
+	<button class="button-14" onclick="return empty()";>EMPTY CART</button>
+
+	<br>
+	<div class="shippingmenu">
+		<form id='delivery' method='post'>
+			<strong>Shipping Options:</strong> <br>
+			<input type="radio" name="send" id="free" value="free">
+			<label for="free">Free Shipping, 1-2 weeks (+$0.00)</label><br>
+			<input type="radio" name="send" id="premium" value="premium">
+			<label for="premium">Premium Shipping, 5 days (+$15.00)</label><br>
+		</form>
+	</div>
+	<br><br>
+	
+	<button class="button-14" onclick="return final()" id="last">CONFIRM PURCHASE</button>
+	<h4 id='outcome' class='outcome'></h4>
+	
+	<button class="hmBtn" onclick="return show('homepage', 'us', 'prod', 'check', 'reg');"> HOME </button>
+</div>
+
+<div id="reg" class="reg_page">
+	<h1> REGISTER. </h1>
+	<h2> Register to Computer Force for Free. </h2>
+	<p> Insert your credentials below to sign up to our website! </p>
+	<form method="post">
+		Username: <input type="text" name="username" id="username"><br>
+		E-mail: <input type="text" name="email" id="email"><br>
+		Password: <input type="password" name="password" id="password"><br><input type="button" id="stdbtn" class="stdbtn" onclick="return pwshow()" value="Show Password">
+		<br>
+		Confirm Password: <input type="text" name="confirmpw" id="confirmpw"><br>
+		First Name: <input type="text" name="fname" id="fname"><br>
+		Surname: <input type="text" name="surname" id="surname"><br>
+		Gender: <br><input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" name="gender" id="female" value="female">
+		<label for="female">Female</label><br>
+		<input type="radio" name="gender" id="other" value="other">
+		<label for="other">Other</label><br>
+		Date of Birth: <input type="date" name="email" id="password"><br>
+		Address: <input type="text" name="address" id="password"><br>
+		Suburb: <input type="text" name="suburb" id="suburb"><br>
+		Postcode: <input type="text" name="postcode" id="postcode"><br>
+		State: <input type="text" name="state" id="state"><br>
+		Phone Number: <input type="text" name="phoneno" id="phoneno"><br>
+		<input type="reset" id="clear" class="clear" value="Clear">
+		<input type="submit" id="register" class="register" value="Register">
+		<button onclick="return show('homepage', 'us', 'prod', 'check', 'reg');"> HOMEPAGE </button>
+	</form>
+	<br>
+	<img src="IMG/block/end.gif">
+</div>
+
+<script src="javascript.js">
+</script>
+
+</body>
+</html>
